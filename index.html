@@ -16,7 +16,17 @@
             // Array of bands
             var bands = ["coldplay","selena","katy perry","justin timberlake"];
             // create a prompt for the user
-            var userguess = prompt("What is your favourite band?");
+            var userGuess = prompt("What is your favourite band?");
+
+            // convert user guess to lowercase
+            var userGuess = userGuess.toLowerCase();
+
+            // logic
+            if(bands.indexOf(userGuess)=== -1) {
+                alert("Not in my list");
+            } else {
+                alert("Love it");
+            }
         </script>
     </body>
 </html>
